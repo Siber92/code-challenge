@@ -17,7 +17,7 @@ public class Translation {
     @NotBlank
     private final String lang;
 
-    public Translation(@JsonProperty("id") UUID id,
+    public Translation(UUID id,
                        @JsonProperty("originalLang") String originalLang,
                        @JsonProperty("translated") String translated,
                        @JsonProperty("lang")String lang) {
