@@ -1,4 +1,5 @@
 # code-challenge
+## REST-API server using spring boot with postgres database.
 
 ## Usage
 [http://localhost:8090/translations](http://localhost:8090/translations)
