@@ -21,6 +21,9 @@ CREATE DATABASE ccdb;
 \c ccdb
 \d translation
 CREATE EXTENSION "uuid-ossp";
-INSERT INTO translation (id,originalLang,translated,lang) VALUES (uuid_generate_v4(), 'potatis', 'potato', 'sv');
+INSERT INTO translation (id,originalLang,translated,lang) VALUES (uuid_generate_v4(), 'Svenska', 'Swedish', 'en');
 SELECT * FROM translation;
+SELECT originalLang,lang FROM translation;
+SELECT originallang,translated,lang FROM translation WHERE originalLang = 'potatis' AND lang ='sv';
+DELETE FROM translation
 ```

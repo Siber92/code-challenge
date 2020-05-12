@@ -17,10 +17,10 @@ public class Translation {
     @NotBlank
     private final String lang;
 
-    public Translation(UUID id,
-                       @JsonProperty String originalLang,
-                       @JsonProperty String translated,
-                       @JsonProperty String lang) {
+    public Translation(@JsonProperty("id") UUID id,
+                       @JsonProperty("originalLang") String originalLang,
+                       @JsonProperty("translated") String translated,
+                       @JsonProperty("lang")String lang) {
         this.id = id;
         this.originalLang = originalLang;
         this.translated = translated;
